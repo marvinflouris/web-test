@@ -1,0 +1,241 @@
+html {
+    scroll-padding-top: 90px;
+    scroll-behavior: smooth;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #5cb8ff;
+}
+
+section {
+    min-height: 95vh;
+
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    background-color: #1f3a5f;
+}
+
+nav a {
+    display: block;
+    padding: 30px 10px;
+    border-radius: 3px;
+    color: aliceblue;
+    text-decoration: none;
+    transition: background-clor 0.3s;
+}
+
+nav a:hover{
+    background-color: rgb(87, 87, 255);
+}
+
+.about-image {
+    display: block;
+    height: auto;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 5px;
+    margin: 30% auto;
+}
+
+#about h2 {
+    line-height: 2.6;
+    /* margin-bottom: 0px; */
+    background-color: aquamarine;
+}
+
+#about p {
+    line-height: 2.6;
+    margin-bottom: 16px;
+}
+
+#courses h3 {
+    margin: 24px 0 12px;
+}
+
+.steps, 
+.programmes {
+    padding-left: 34px;
+}
+
+.steps li , 
+.programmes li {
+    line-height: 1.6;
+    margin-bottom: 10px;
+    /* background-color: coral; */
+}
+
+.programmes {
+    list-style-type: square;
+}
+
+.programmes li::marker{
+    color: #3b6ea8;
+}
+
+.steps {
+    list-style-type: decimal;
+}
+
+.steps li::marker{
+    color: #3b6ea8;
+    font-weight: bold;
+}
+
+table-wrapper {
+    overflow-x: auto;
+}
+
+.timetable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table caption {
+    margin-bottom: 10px;
+    font-style: italic;
+    text-align: left;
+}
+
+.timetable th, 
+.timetable td {
+    border: 1px solid #1f3a5f;
+    padding: 10px 5px;
+    text-align: left;
+}
+
+.timetable thead th {
+    background-color: #1f3a5f;
+    color: aliceblue;
+}
+
+.timetable tbody tr:nth-child(even) {
+    background-color: darksalmon;
+}
+
+#timetable h2 {
+    margin-top: 60px;
+}
+
+.reg-form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f2f5fa;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    padding: 8px;
+}
+
+button {
+    padding: 8px 20px;
+    cursor: pointer;
+}
+
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    flex: 1 1 220px;
+    padding: 40px;
+    border-radius: 6px;
+}
+
+.card:nth-child(1) {
+    background-color: lightblue;
+}
+
+.card:nth-child(2) {
+    background-color: lightgreen;
+}
+
+.card:nth-child(3) {
+    background-color: khaki;
+}
+
+.card:nth-child(4) {
+    background-color: lightpink;
+}
+
+.card h4 {
+    margin-bottom: 10px;
+}
+
+.card {
+    position: relative;
+}
+
+.register-label {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgba(124, 84, 255, 0.859);
+    color: white;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 16px;
+    background-color: #1f3a5f;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.back-to-top:hover {
+    background-color: #3b6ea8;
+}
+
+
+#home {
+    background-image: url("./IMAGES/home.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+#courses {
+    background-color: #00c3ff7a;
+}
+
+#timetable {
+    height: 50%;
+    background-color: #ffef95c5;
+}

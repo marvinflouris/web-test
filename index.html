@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ISBAT ICT Training Centre</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="top">
+        <h1>ISBAT University Student ICT Training Centre</h1>
+    </header>
+
+    <nav>
+      <!-- navigations placed outside header to keep ot sticked on even on scroll-->
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#timetable">TimeTable</a></li>
+        <li><a href="#registration">Registration</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+    </nav>
+
+    <main>
+
+      <section id="home">
+        <h2>Welcome Dear</h2>
+        <!-- <img src="./IMAGES/img2.jpg" alt="Welcom Image"> -->
+      </section>
+      <section id="courses">
+        <h2>Choose Your Course</h2>
+
+        <h3>Available Training Programmes</h3>
+        <ol class="programmes">
+          <li>Web Development</li>
+          <li>Computer Networking</li>
+          <li>Database Management</li>
+          <li>Cybersecurity</li>
+        </ol>
+        <h3>How to Register</h3>
+        <ol class="steps">
+          <li>Choose the training programme you want to join.</li>
+          <li>Check the weekly timetable for session days and times.</li>
+          <li>Fill in the registration form with your details.</li>
+          <li>Submit the form and wait for a confirmation.</li>
+        </ol>
+        <h3>Course Cards</h3>
+        <div class="cards">
+
+          <div class="card">
+            <a class="register-label" href="#registration">Register Now</a>
+            <h4>Web Development</h4>
+            <p>Learn to build websites with HTML, CSS and JavaScript.</p>
+          </div>
+
+          <div class="card">
+            <a class="register-label" href="#registration">Register Now</a>
+            <h4>Computer Networking</h4>
+            <p>Understand how networks are designed, set up and secured.</p>
+          </div>
+
+          <div class="card">
+            <a class="register-label" href="#registration">Register Now</a>
+            <h4>Database Management</h4>
+            <p>Create and manage databases using SQL.</p>
+          </div>
+
+          <div class="card">
+            <a class="register-label" href="#registration">Register Now</a>
+            <h4>Cybersecurity</h4>
+            <p>Protect systems and data from common online threats.</p>
+          </div>
+
+        </div>
+      </section>
+      <section id="timetable">
+        <h2>The TimeTable</h2>
+          <div class="table-wrapper">
+            <table class="timetable">
+
+              <caption>Student ICT Training Centre, weekly sessions</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Day</th>
+                  <th scope="col">Course</th>
+                  <th scope="col">Time</th>
+                  <th scope="col">Instructor</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Monday</td>
+                  <td>Web Development</td>
+                  <td>9:00 AM - 11:00 AM</td>
+                  <td>Mr. Okello</td>
+                </tr>
+                <tr>
+                  <td>Tuesday</td>
+                  <td>Computer Networking</td>
+                  <td>2:00 PM - 4:00 PM</td>
+                  <td>Ms. Nabirye</td>
+                </tr>
+                <tr>
+                  <td>Wednesday</td>
+                  <td>Database Management</td>
+                  <td>10:00 AM - 12:00 PM</td>
+                  <td>Mr. Kato</td>
+                </tr>
+                <tr>
+                  <td>Thursday</td>
+                  <td>Cybersecurity</td>
+                  <td>1:00 PM - 3:00 PM</td>
+                  <td>Dr. Namukasa Paulindonobo</td>
+                </tr>
+              </tbody>
+
+            </table>
+          </div>
+      </section>
+
+      <section id="registration">
+        <h2>Please Register</h2>
+        <form class="reg-form" action="#" method="post">
+
+          <div class="form-group">
+            <label for="fullname">Full Name</label>
+            <input type="text" id="fullname" name="fullname" required>
+          </div>
+
+          <div class="form-group">
+            <label for="studentno">Student Number</label>
+            <input type="text" id="studentno" name="studentno" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+
+          <div class="form-group">
+            <label><strong>Gender</strong></label>
+            <div class="options">
+              <label><input type="radio" name="gender" value="male" required> Male</label>
+              <label><input type="radio" name="gender" value="female"> Female</label>
+              <label><input type="radio" name="gender" value="other"> Other</label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="course">Preferred Course</label>
+            <select id="course" name="course" required>
+              <option value="">-- Select a course --</option>
+              <option value="web">Web Development</option>
+              <option value="networking">Computer Networking</option>
+              <option value="database">Database Management</option>
+              <option value="cyber">Cybersecurity</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label><strong>Study Mode</strong></label>
+            <div class="options">
+              <label><input type="checkbox" name="mode" value="weekday"> Weekday</label>
+              <label><input type="checkbox" name="mode" value="weekend"> Weekend</label>
+              <label><input type="checkbox" name="mode" value="online"> Online</label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="comments">Additional Comments</label>
+            <textarea id="comments" name="comments" rows="5"></textarea>
+          </div>
+
+          <div class="buttons">
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+          </div>
+
+        </form>
+      </section>
+
+      <section id="about">
+        <h2>About Us</h2>
+        <p><h3>At ISBAT Training Centre we train you from ground uo to a professional in only a few months.</h3></p>
+        <p><h3>You get to learn under supervision and guidance from world leading engineers in all feilds in tech from all around the world.</h3></p>
+        <img class="about-image" src="./IMAGES/img1.jpeg" alt="image of ISBAT experts during training session">
+      </section>
+
+    </main>
+
+    <footer>
+      <p>&copy; 2026 ISBAT University. All rights reserved.</p>
+    </footer>
+
+    <a href="#top" class="back-to-top">Back to Top</a>
+</body>
+</html>
